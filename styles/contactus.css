@@ -1,0 +1,258 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background: rgba(255, 255, 255, 1);
+    padding-top: 10px;
+    
+}
+.title-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(650px - 144px);
+}
+.title-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    max-height: 680px;
+}
+
+.title-background::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: -5;
+    max-height: 680px;
+}
+.contactus_title h2{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding-bottom: 30px;
+
+}
+
+.contact-details-left {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.quote-form {
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 8px;
+}
+
+.quote-form p {
+    margin-bottom: 15px;
+}
+
+.contact-details-right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1;
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+    background-image: url('/images/sallon_background_2_enhanced.webp'); 
+    background-size: cover; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    -webkit-text-fill-color: transparent; 
+}
+.contact-details-left form,
+.contact-details-right .second-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details-left form input,
+.contact-details-left form textarea{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    padding: 17px 26px;
+    border: 1.5px solid rgba(0,0,0,1);
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 4px;
+}
+.contact-details-left form input:focus,
+.contact-details-left form textarea:focus{
+    outline: none;
+}
+.contact-details-left form textarea{
+    height: 230px;
+}
+.contact-details-left form button{
+    padding: 12px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    line-height: 24px;
+    letter-spacing: 1.05px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+}
+.contact-details-left form button:hover {
+    background-color: rgba(209, 2, 2, 1);
+}
+
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.title-background {
+    position: relative;
+    text-align: center;
+    height: 500px;
+}
+
+.title-background img {
+    position: static;
+    width: 100%;
+    display: block;
+    height: 643px;
+    object-fit: cover;
+}
+
+.contactus_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+
+.contactus_title h2 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-info .head-office,
+.contact-info .mumbai-office,
+.contact-info {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.contact-info{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.contact-info{
+    border-bottom: none;
+}
+.contact-info i {
+    position: relative;
+    margin-right: 5px;
+    background: #000;
+    color: #FFF;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contact-info a {
+    color: #252525;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+    transition: transform 300ms ease-in-out;
+}
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid;
+    transform: scaleX(0);
+    margin: 0;
+    transition: transform 300ms ease;
+    transform-origin: center;
+    border-color: black;
+}
+
+.contact-info a:hover::after {
+    transform: scaleX(1);
+}
+
+.contact-info a:hover{
+    text-decoration: none;
+    transform: scale(1.02);
+}
+.second-form {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-details-left,
+    .contact-details-right {
+        flex: 100%;
+        padding: 10px;
+    }
+
+    .title-background img {
+        height: auto;
+    }
+
+    .contactus_title h2 {
+        font-size: 1.8em;
+    }
+}
